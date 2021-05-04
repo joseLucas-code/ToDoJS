@@ -115,7 +115,7 @@ section#todo-container{
 
 .list-items ul li.item-single.check{
     background: #2ecc71;
-    transition: .3s;
+    transition: background .3s;
 }
 
 .list-items ul li.item-single.check:hover{
