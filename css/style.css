@@ -75,6 +75,12 @@ section#todo-container{
     background: #34495e;
     padding: 6px 10px;
     cursor: pointer;
+    transition: .3s;
+}
+
+.text-input i:hover {
+    background: #2c3e50;
+    color: #f39c12;
 }
 
 .text-input p{
@@ -91,7 +97,7 @@ section#todo-container{
 }
 
 .list-items ul li.item-single{
-    background: cyan;
+    background: #00cec9;
     padding: 8px 3%;
     display: flex;
     justify-content: space-between;
@@ -101,9 +107,19 @@ section#todo-container{
     cursor: pointer;
     border: 2px solid #2c3e50;
     margin: 10px 0;
+    transition: .3s;
 }
+.list-items ul li.item-single:hover{
+    background: #74b9ff;
+}
+
 .list-items ul li.item-single.check{
     background: #2ecc71;
+    transition: .3s;
+}
+
+.list-items ul li.item-single.check:hover{
+    background: #27ae60;
 }
 
 .list-items ul li.item-single .item-name{
