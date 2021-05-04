@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>To Do List</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="lucas">
+    <meta name="description" content="ToDo list">
+    <meta name=keywords content="projeto,pratico,iniciante,html,css,js">
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="favicon_io/apple-touch-icon.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>To Do list</h1>
+        <p>Insira um texto no campo para adicionar itens à sua lista(Maximo 28 caractéres).</p>
+        <p>Clique no item para marcar como completo.</p>
+        <p>Clique no "X" para remover o item da sua lista.</p>
+    </header>
+
+    <main>
+        <section id="todo-container">
+            <div class="text-input">
+                <div class="input-flex">
+                    <input type="text" placeholder="Novo item..." max="28" id="text-new-item">
+                    <i class="fas fa-pencil-alt js-add"></i>
+                </div><!--## INPUT FLEX ##-->
+
+                <p>Caracteres restantes: <span class="remaing">28</span></p>
+            </div><!--## TEXT INPUT ##-->
+
+            
+
+            <div class="list-items">
+                <ul class="js-list-container"></ul>
+            </div><!--## LIST ITEMS ##-->
+        </section><!--## TODO CONTAINER ##-->
+    </main>
+
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

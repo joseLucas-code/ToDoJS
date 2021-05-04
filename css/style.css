@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background: #2980b9;
+}
+
+header{
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+header h1{
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+header p{
+    margin: 5px 0;
+}
+
+header p:nth-child(2){
+    color: #f1c40f;
+}
+
+header p:nth-child(3){
+    color: #1abc9c;
+}
+
+header p:nth-child(4){
+    color: #e67e22;
+}
+
+section#todo-container{
+    max-width: 980px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-input{
+    width: 100%;
+    max-width: 580px;
+    
+}
+
+.text-input .input-flex{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.text-input input{
+    width: 100%;
+    padding: 5px 2%;
+    border: 1px solid cyan;
+}
+
+.text-input i {
+    background: #34495e;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+.text-input p{
+    margin-top: 5px;
+    text-align: left;
+    color: #fff;
+}
+
+.list-items{
+    width: 100%;
+    max-width: 500px;
+    margin-top: 10px;
+    padding: 20px 3%;
+}
+
+.list-items ul li.item-single{
+    background: cyan;
+    padding: 8px 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid #2c3e50;
+    margin: 10px 0;
+}
+.list-items ul li.item-single.check{
+    background: #2ecc71;
+}
+
+.list-items ul li.item-single .item-name{
+    color: white;
+    font-weight: 700;
+}
+
+.list-items ul li.item-single .item-name::first-letter{
+    text-transform: uppercase;
+}
+
+.list-items ul li.item-single i {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.list-items ul li.item-single i:hover {
+    color: red;
+}
