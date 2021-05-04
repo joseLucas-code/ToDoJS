@@ -54,13 +54,14 @@ section#todo-container{
 .text-input{
     width: 100%;
     max-width: 580px;
-    
+    padding: 0 2%;
 }
 
 .text-input .input-flex{
     display: flex;
     align-items: center;
     gap: 10px;
+    
 }
 
 
